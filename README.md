@@ -4,6 +4,16 @@
 
 ---
 
+### Alumnos: fork + GitHub Codespaces
+
+1. **Fork** del repositorio y abre un **Codespace** desde tu fork (*Code* → *Codespaces*).
+2. **Teoría:** [`MODULOS/`](curso-microservicios-js/MODULOS/) · **Ejemplos:** [`EJEMPLOS/`](curso-microservicios-js/EJEMPLOS/) (cada carpeta trae un `README` con los pasos).
+3. **Laboratorios:** los construyes en `curso-microservicios-js/LABS/` siguiendo los guiones `*_practica_*.md` (en `main` esa carpeta no viene rellena).
+
+En el **Codespace por defecto** ya tienes **Node** y **Docker**; para abrir APIs y UIs en el navegador usa la pestaña **Ports**.
+
+---
+
 ### 🧩 **Módulo 1 – Del Monolito a los Microservicios** *(2h)*
 
 #### 1.1 Conceptos iniciales — 📄 [Abrir tema](curso-microservicios-js/MODULOS/Modulo1/1.1_que_es_una_arquitectura_monolitica.md)

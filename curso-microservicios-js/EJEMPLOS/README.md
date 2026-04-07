@@ -4,6 +4,8 @@ Código **corto y ejecutable** para apoyar la parte teórica. Cada carpeta es in
 
 **Cada ejemplo incluye un `README.md`** con: cómo ejecutarlo, qué ver en pantalla, qué validar, foco didáctico y conclusiones.
 
+En **GitHub Codespaces:** fork del repo, terminal integrada, pestaña **Ports** para abrir puertos. Resumen en el [README del curso](../../../README.md).
+
 | Carpeta | Guía | Módulo / tema | Qué muestra |
 |---------|------|----------------|-------------|
 | [monolito](./monolito/) | [README](./monolito/README.md) | 1.1, 1.2, LAB1 | Una sola app Express con `/users` y `/orders` |
