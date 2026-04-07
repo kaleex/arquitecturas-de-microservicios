@@ -63,4 +63,4 @@ curl -s http://localhost:3002/health
 
 ## Conclusiones
 
-Este es el salto mínimo de “monolito mental” a **sistema distribuido**: más autonomía por servicio, pero aparecen **disponibilidad**, **timeouts** y **errores HTTP** que antes no existían en la misma memoria. Conecta con el **módulo 2.1** (comunicación síncrona) y con el **LAB1** del curso.
+Este es el salto mínimo de “monolito mental” a **sistema distribuido**: más autonomía por servicio, pero aparecen **disponibilidad**, **timeouts** y **errores HTTP** que antes no existían en la misma memoria. Conecta con el **módulo 2.1** (comunicación síncrona) y con la **práctica del M1** (junto con el ejemplo `monolito`; el módulo 1 no tiene carpeta `LABS` guiada).

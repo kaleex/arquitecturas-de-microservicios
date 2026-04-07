@@ -2,7 +2,7 @@
 
 ## Objetivo pedagógico
 
-Mostrar el flujo mínimo **producir → cola → consumir** sin HTTP entre procesos: desacoplamiento en el **tiempo** (el consumidor no tiene que estar disponible en el instante exacto del envío). Útil antes del laboratorio con *exchanges* y varios servicios (módulo 3 / LAB3).
+Mostrar el flujo mínimo **producir → cola → consumir** sin HTTP entre procesos: desacoplamiento en el **tiempo** (el consumidor no tiene que estar disponible en el instante exacto del envío). Útil antes del laboratorio con *exchanges* y varios servicios (módulo 3 / laboratorio 3.4).
 
 ## Qué necesitas
 
@@ -61,7 +61,7 @@ export RABBITMQ_URL=amqp://localhost:5672
 ## Dónde poner el foco
 
 - Comparar con REST: aquí **no** hay “request/response” en la misma petición HTTP; hay **ventana temporal** entre emisión y procesamiento.
-- Este ejemplo usa **cola directa** (`sendToQueue` / `consume`); en **3.2** y **LAB3** se introduce el **exchange** y el enrutamiento por clave/topic.
+- Este ejemplo usa **cola directa** (`sendToQueue` / `consume`); en **3.2** y el **laboratorio 3.4** se introduce el **exchange** y el enrutamiento por clave/topic.
 
 ## Conclusiones
 

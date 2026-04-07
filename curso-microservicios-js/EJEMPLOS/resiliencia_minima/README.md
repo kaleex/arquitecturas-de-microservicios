@@ -48,4 +48,4 @@ SERVICIO_URL=http://localhost:3010/dato npm run cliente
 
 ## Conclusiones
 
-La resiliencia no es solo “capturar el error”: es **degradar con criterio** y **no amplificar** el fallo. El circuit breaker es un patrón central en microservicios para evitar que una dependencia enferma derrumbe todo el sistema. Encaja con el **módulo 2.3** y prepara el **LAB2**.
+La resiliencia no es solo “capturar el error”: es **degradar con criterio** y **no amplificar** el fallo. El circuit breaker es un patrón central en microservicios para evitar que una dependencia enferma derrumbe todo el sistema. Encaja con el **módulo 2.3** y prepara el **laboratorio 2.4** (resiliencia aplicada).

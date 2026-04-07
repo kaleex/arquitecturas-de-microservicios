@@ -8,7 +8,7 @@
 
 1. **Fork** del repositorio y abre un **Codespace** desde tu fork (*Code* → *Codespaces*).
 2. **Teoría:** [`MODULOS/`](curso-microservicios-js/MODULOS/) · **Ejemplos:** [`EJEMPLOS/`](curso-microservicios-js/EJEMPLOS/) (cada carpeta trae un `README` con los pasos).
-3. **Laboratorios:** los construyes en `curso-microservicios-js/LABS/` siguiendo los guiones `*_practica_*.md` (en `main` esa carpeta no viene rellena).
+3. **Laboratorios (M2–M5):** los construyes en `curso-microservicios-js/LABS/` siguiendo los guiones `*_practica_*.md` (en `main` esa carpeta no viene rellena). **M1** no tiene lab en `LABS`: la práctica son solo [`EJEMPLOS/monolito`](curso-microservicios-js/EJEMPLOS/monolito) y [`distribuida`](curso-microservicios-js/EJEMPLOS/distribuida).
 
 En el **Codespace por defecto** ya tienes **Node** y **Docker**; para abrir APIs y UIs en el navegador usa la pestaña **Ports**.
 
@@ -34,15 +34,14 @@ En el **Codespace por defecto** ya tienes **Node** y **Docker**; para abrir APIs
 * Contextos delimitados (*Bounded Contexts*).
 * Definición de contratos API entre servicios.
 
-#### 1.4 Práctica LAB1 – “Desacoplando el monolito”
+#### 1.4 Práctica (solo ejemplos): desacoplar el monolito
 
-* Crear un monolito Express con endpoints `/users` y `/orders`.
-* Separar en dos servicios independientes.
-* Probar comunicación REST con Axios.
+No hay carpeta `LABS` en el módulo 1: ejecuta y contrasta los ejemplos listos en el repo.
 
-📁 **Material en el repositorio:** [`EJEMPLOS/monolito`](curso-microservicios-js/EJEMPLOS/monolito) · [`EJEMPLOS/distribuida`](curso-microservicios-js/EJEMPLOS/distribuida)
+📁 **[`EJEMPLOS/monolito`](curso-microservicios-js/EJEMPLOS/monolito)** — un solo proceso con `/users` y `/orders`.  
+📁 **[`EJEMPLOS/distribuida`](curso-microservicios-js/EJEMPLOS/distribuida)** — dos servicios y llamada HTTP con Axios (ver README de cada carpeta).
 
-Los mismos ejemplos se citan en teoría en **1.1**, **1.2**, **1.3** (monolito / distribuida) y en **2.1** (comunicación síncrona). **Service Discovery** tiene ejemplo en [`EJEMPLOS/service-discovery`](curso-microservicios-js/EJEMPLOS/service-discovery), enlazado desde el tema **2.2**.
+En teoría también se enlazan desde **1.1–1.3** y **2.1**. **Service discovery:** [`EJEMPLOS/service-discovery`](curso-microservicios-js/EJEMPLOS/service-discovery) (tema **2.2**).
 
 ---
 
@@ -68,7 +67,7 @@ Los mismos ejemplos se citan en teoría en **1.1**, **1.2**, **1.3** (monolito /
 
 📁 Ejemplo breve: [`EJEMPLOS/resiliencia_minima`](curso-microservicios-js/EJEMPLOS/resiliencia_minima).
 
-#### 2.4 Práctica LAB2 – “Resiliencia aplicada” — 📄 [Abrir laboratorio](curso-microservicios-js/MODULOS/02-comunicacion-resiliencia-y-descubrimiento/2.4_practica_resiliencia.md)
+#### 2.4 Laboratorio guiado – “Resiliencia aplicada” — 📄 [Abrir laboratorio](curso-microservicios-js/MODULOS/02-comunicacion-resiliencia-y-descubrimiento/2.4_practica_resiliencia.md)
 
 * Implementar llamadas entre servicios con Axios.
 * Añadir *retry*, *timeout* y *circuit breaker*.
@@ -96,7 +95,7 @@ Los mismos ejemplos se citan en teoría en **1.1**, **1.2**, **1.3** (monolito /
 * Diferencia entre coordinación centralizada y descentralizada.
 * Patrones de integración por eventos.
 
-#### 3.4 Práctica LAB3 – “Eventos de pedido” — 📄 [Abrir laboratorio](curso-microservicios-js/MODULOS/03-mensajeria-y-eventos/3.4_practica_eventos.md)
+#### 3.4 Laboratorio guiado – “Eventos de pedido” — 📄 [Abrir laboratorio](curso-microservicios-js/MODULOS/03-mensajeria-y-eventos/3.4_practica_eventos.md)
 
 * Ejecutar **RabbitMQ** con Docker Compose (local o Codespaces).
 * **Coreografía:** publicar eventos (p. ej. `pedido.creado`) desde `orders-service` y encadenar **payments**, **shipping** y **notifications** mediante el bus.
@@ -118,7 +117,7 @@ Los mismos ejemplos se citan en teoría en **1.1**, **1.2**, **1.3** (monolito /
 * Reconstrucción del estado desde el historial.
 * Beneficios y retos: trazabilidad, complejidad.
 
-#### 4.3 Práctica LAB4 – “Command vs Query” — 📄 [Abrir laboratorio](curso-microservicios-js/MODULOS/04-cqrs-y-event-sourcing/4.3_practica_cqrs.md)
+#### 4.3 Laboratorio guiado – “Command vs Query” — 📄 [Abrir laboratorio](curso-microservicios-js/MODULOS/04-cqrs-y-event-sourcing/4.3_practica_cqrs.md)
 
 * Implementar **`POST /pedido`** (command) y **`GET /pedidos`** (query) en servicios distintos.
 * Generar un evento tras cada comando y consumirlo en el servicio de consultas.
@@ -147,7 +146,7 @@ Los mismos ejemplos se citan en teoría en **1.1**, **1.2**, **1.3** (monolito /
 * Variables de entorno (.env) y configuración centralizada.
 * Principio de *12-Factor App* aplicado a microservicios.
 
-#### 5.4 Práctica LAB5 – “Gateway y autenticación JWT” — 📄 [Abrir laboratorio](curso-microservicios-js/MODULOS/05-gateway-y-seguridad/5.4_practica_gateway_jwt.md)
+#### 5.4 Laboratorio guiado – “Gateway y autenticación JWT” — 📄 [Abrir laboratorio](curso-microservicios-js/MODULOS/05-gateway-y-seguridad/5.4_practica_gateway_jwt.md)
 
 * **API Gateway** en Express que **enruta** hacia microservicios usando **`axios`**.
 * **`auth-service`** con **`POST /login`**; el gateway expone **`POST /api/login`** y reenvía la petición.

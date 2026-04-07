@@ -8,11 +8,11 @@ En **GitHub Codespaces:** fork del repo, terminal integrada, pestaña **Ports** 
 
 | Carpeta | Guía | Módulo / tema | Qué muestra |
 |---------|------|----------------|-------------|
-| [monolito](./monolito/) | [README](./monolito/README.md) | 1.1, 1.2, LAB1 | Una sola app Express con `/users` y `/orders` |
-| [distribuida](./distribuida/) | [README](./distribuida/README.md) | 1.3, 2.1, LAB1 | Dos procesos HTTP (3001 / 3002) |
+| [monolito](./monolito/) | [README](./monolito/README.md) | 1.1, 1.2, M1 (ejemplos) | Una sola app Express con `/users` y `/orders` |
+| [distribuida](./distribuida/) | [README](./distribuida/README.md) | 1.3, 2.1, M1 (ejemplos) | Dos procesos HTTP (3001 / 3002) |
 | [service-discovery](./service-discovery/) | [README](./service-discovery/README.md) | 2.2 | Consul + registro + cliente |
-| [resiliencia_minima](./resiliencia_minima/) | [README](./resiliencia_minima/README.md) | 2.3, LAB2 | Fallos simulados + **opossum** |
-| [mensajeria_simple](./mensajeria_simple/) | [README](./mensajeria_simple/README.md) | 3.1, 3.2 | RabbitMQ + publicador / consumidor |
+| [resiliencia_minima](./resiliencia_minima/) | [README](./resiliencia_minima/README.md) | 2.3, lab 2.4 | Fallos simulados + **opossum** |
+| [mensajeria_simple](./mensajeria_simple/) | [README](./mensajeria_simple/README.md) | 3.1, 3.2, lab 3.4 | RabbitMQ + publicador / consumidor |
 | [gateway_minimo](./gateway_minimo/) | [README](./gateway_minimo/README.md) | 5.1 | Gateway Express → distribuida |
 
 Los laboratorios completos están en las carpetas temáticas bajo [`MODULOS/`](../MODULOS/) (archivos `*_practica_*.md`; tú generas `LABS/` siguiendo el guion).
